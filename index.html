@@ -278,7 +278,7 @@ tr:hover td { background: #f5f7fb; }
 // KeyDate: { date, event, portfolio, notes }
 // ─────────────────────────────────────────────────────────────────────────────
 
-const LAST_UPDATED = "18 May 2026 (08:20)";
+const LAST_UPDATED = "8 Jun 2026";
 
 // ── KEY DATES ────────────────────────────────────────────────────────────────
 const KEY_DATES = [
@@ -295,46 +295,54 @@ const KEY_DATES = [
   { date: "May 27, 2026", event: "Project Padi (08:00–09:00)", portfolio: "Marketing", notes: "Aimee to confirm photographer" },
   { date: "May 29, 2026", event: "Minute to Win It / YE Theme Reveal Night", portfolio: "Church", notes: "" },
   { date: "May 30, 2026", event: "SACSA + Junior Netball District Champs (double header)", portfolio: "Sports", notes: "Aidan = SACSA · Nelisile = Netball" },
-  { date: "Jun 5, 2026", event: "Worship Night", portfolio: "Church", notes: "" },
+  { date: "Jun 5, 2026", event: "Worship Night — POSTPONED", portfolio: "Church", notes: "Design done. Date TBD — postponed until further notice. Youth Worship Night same event." },
   { date: "Jun 6, 2026", event: "SACSA — Nelisile on-site", portfolio: "Sports", notes: "" },
   { date: "Jun 8, 2026", event: "Little Saints Board Report Q2", portfolio: "Little Saints", notes: "" },
   { date: "Jun 12, 2026", event: "Primary Champs Netball", portfolio: "Sports", notes: "❓ Coverage TBD" },
   { date: "Jun 13, 2026", event: "Single Mom Brunch", portfolio: "Church", notes: "" },
   { date: "Jun 13, 2026", event: "Secondary Champs Netball", portfolio: "Sports", notes: "❓ Coverage TBD" },
-  { date: "Jun 20, 2026", event: "Bootcamp (Church + Saints)", portfolio: "Church", notes: "" },
+  { date: "Jun 20, 2026", event: "Bootcamp (Church + Saints)", portfolio: "Church", notes: "Invites out 1 Jun" },
+  { date: "Jun 20, 2026", event: "Music Ministry Workshop (08:00–11:00)", portfolio: "Church", notes: "Invite going out today" },
   { date: "Jun 22, 2026", event: "Saints Board Report Q2", portfolio: "Saints", notes: "" },
+  { date: "Jun 22, 2026", event: "Paid marketing switches: Book a Tour → Open Day messaging", portfolio: "Marketing", notes: "Strategy switchover date — not an event" },
   { date: "Jun 23, 2026", event: "Formal Ball (Saints)", portfolio: "Saints", notes: "" },
+  { date: "Jun 23, 2026", event: "Morning Devotions — David presenting", portfolio: "Operations", notes: "07:30" },
   { date: "Jun 26, 2026", event: "Waterstone College Soccer (3-day travel)", portfolio: "Sports", notes: "❓ Who travels not confirmed" },
+  { date: "Jul 22, 2026", event: "KYB visit Gr 9-12 at Saints", portfolio: "Saints", notes: "Nelisile captures + posts. Tier 5." },
+  { date: "Jul 25, 2026", event: "Team Building — compulsory attendance (Saints)", portfolio: "Saints", notes: "Theme design due from Aidan by Jun 10" },
+  { date: "Jul 31, 2026", event: "Prefect Braai + Eistedfodd Choir QQ", portfolio: "Saints", notes: "" },
+  { date: "Aug 1, 2026", event: "Open Day — Saints + Little Saints (compulsory)", portfolio: "Saints", notes: "Sponsor invite: marketing to design. Nelisile checking enquiries daily." },
+  { date: "Aug 6, 2026", event: "SSS-Nationals Soccer (Aug 6–11)", portfolio: "Sports", notes: "6-day national tournament. Coverage plan needed by Jul 20." },
+  { date: "Aug 14, 2026", event: "Youth Explosion (Aug 14–15)", portfolio: "Church", notes: "Tier 1" },
+  { date: "Aug 22, 2026", event: "Schoonspruit FAST 5s", portfolio: "Saints", notes: "" },
+  { date: "Aug 23, 2026", event: "Little Saints Concert", portfolio: "Little Saints", notes: "WIN done 8 Jun. Aidan designing. Timeline to set with Loise." },
+  { date: "Sep 17, 2026", event: "Rivers-Sisters Conference (Sep 17–19)", portfolio: "Church", notes: "P4 active — almost fully booked" },
+  { date: "Sep 22, 2026", event: "Saints Production (Sep 22–23)", portfolio: "Saints", notes: "WIN done 8 Jun. Aidan designing — 22 Jun draft. Launch week 22 Jun. David = lights/sound/video." },
 ];
 
 // ── TASKS ────────────────────────────────────────────────────────────────────
 // portfolios: urgent | marketing | sp | music | ops | dashboard
 const TASKS = [
   // URGENT
-  { id: 3, task: "Baby Dedication #2 — send brief to Renier", portfolio: "urgent", owner: "David", due: "May 19, 2026", status: "pending", notes: "David to send baby name + details to Renier. Set to be done Tuesday 19 May. Service May 24." },
-  { id: 4, task: "Saints Q2 Merit money — count + give to Cathrine", portfolio: "urgent", owner: "David", due: "May 18, 2026", status: "pending", notes: "Count today or tomorrow (14–15 May). Give to Cathrine on Monday 18 May." },
+  { id: 116, task: "Designer replacement — chat Aidan + launch paid marketing ad", portfolio: "urgent", owner: "David", due: "Jun 9, 2026", status: "active", notes: "Aidan is leaving the designer role. Chat with him on who should replace him. Post already designed by Aidan — run paid marketing to promote the open position ASAP." },
+  { id: 117, task: "Finance Clerk position opening — send out tomorrow", portfolio: "urgent", owner: "David", due: "Jun 9, 2026", status: "active", notes: "Create and send out Finance Clerk position opening. Ready to go 9 Jun 2026." },
+  { id: 118, task: "Sports team photos + netball win post — waiting on Claudio", portfolio: "urgent", owner: "Nelisile", due: "", status: "waiting", notes: "Nelisile took all team photos ~2 weeks ago. Claudio must send all team results/scores → then Nelisile posts all teams + scores. Also: u/17 girls WON Doctor KK region → going to North West region." },
 
   // MARKETING
-  { id: 10, task: "Single Mom Brunch — Neo approval → launch 18 May", portfolio: "marketing", owner: "Neo / Renier", due: "May 18, 2026", status: "waiting", notes: "Design done by Aidan. Draft with Neo for approval. Launch 18 May — three-entity collab." },
-  { id: 11, task: "Permanent paid ad campaign — design phase", portfolio: "marketing", owner: "Aidan / David", due: "May 15, 2026", status: "active", notes: "Design 13–15 May (Aidan). Launch 18 May. David owns campaign." },
-  { id: 12, task: "Worship Night — design phase", portfolio: "marketing", owner: "Renier", due: "May 22, 2026", status: "active", notes: "Brief sent 12 May. Design 15–22 May. Launch May 25." },
-  { id: 13, task: "Limpopo recap reel — get testimonials Sunday", portfolio: "marketing", owner: "Renier", due: "May 17, 2026", status: "active", notes: "Renier getting testimonials Sunday 17 May. Recap post to follow." },
+  { id: 10, task: "Single Mom Brunch — poster live + registration link live", portfolio: "marketing", owner: "Renier", due: "Jun 13, 2026", status: "active", notes: "P4 active promotion. Poster approved + out. Registration link live as of 1 Jun 2026." },
+  { id: 11, task: "Permanent paid ad campaign — design phase", portfolio: "marketing", owner: "Aidan / David", due: "May 26, 2026", status: "active", notes: "Design phase moved up. New launch date: 26 May. David owns campaign." },
+  { id: 12, task: "Worship Night — POSTPONED until further notice", portfolio: "marketing", owner: "Renier", due: "", status: "waiting", notes: "Design done. Date postponed until further notice. Youth Worship Night is the same event — both postponed." },
   { id: 14, task: "Blurry poster redo — confirm Renier done", portfolio: "marketing", owner: "Renier", due: "", status: "waiting", notes: "Reshoot done ✓. Follow up with Renier — is the final updated poster complete?" },
   { id: 15, task: "Aidan sticker mock-up — 3 road boards by mall", portfolio: "marketing", owner: "Aidan", due: "", status: "pending", notes: "" },
   { id: 16, task: "CRC school invite video", portfolio: "marketing", owner: "Aidan", due: "", status: "pending", notes: "Both schools (Saints + LS). Tier 4." },
-  { id: 60, task: "Zambia team — contribution picture", portfolio: "marketing", owner: "Renier", due: "May 15, 2026", status: "active", notes: "Phase 0 ✓. Renier designing today. ❓ Tier unassigned — confirm with David. Pastor Sandy request." },
-  { id: 61, task: "Zambia team — soup sale poster + slide", portfolio: "marketing", owner: "Renier", due: "May 15, 2026", status: "active", notes: "Poster + slide for soup they're selling as Zambia fundraiser. Renier to look at today alongside contribution picture. ❓ Tier unassigned." },
-  { id: 18, task: "Youth Worship Night — poster + slide (Jun 5, 18:00–19:00)", portfolio: "marketing", owner: "Aidan / Renier", due: "May 25, 2026", status: "pending", notes: "Aimee's request. Give to Aidan first — hand to Renier if too busy. Needed for launch May 25." },
+  { id: 18, task: "Youth Worship Night — same as Worship Night, POSTPONED", portfolio: "marketing", owner: "Renier", due: "", status: "waiting", notes: "Same event as Worship Night. Both postponed until further notice." },
   { id: 19, task: "Saints Dragons Awards ceremony post", portfolio: "marketing", owner: "Nelisile", due: "", status: "waiting", notes: "Jade sent photos → David forwarded to Nelisile. Confirm Nelisile received + knows what to do." },
   { id: 20, task: "Jun 12–13 Champs Netball — confirm coverage", portfolio: "marketing", owner: "David", due: "May 15, 2026", status: "pending", notes: "❓ TBD — who covers Primary + Secondary Champs." },
   { id: 21, task: "Jun 26–28 Waterstone — confirm who travels", portfolio: "marketing", owner: "David", due: "May 28, 2026", status: "pending", notes: "Full weekend travel. ❓ Coverage person not confirmed." },
 
   // SERVICE PRODUCTION
-  { id: 30, task: "Baby Dedication #1 — Renier revising (Loise changes)", portfolio: "sp", owner: "Renier", due: "May 24, 2026", status: "active", notes: "Small changes from Loise. Renier to revise and resubmit for approval." },
-  { id: 31, task: "Baby Dedication #2 — slides + certificates", portfolio: "sp", owner: "Renier", due: "May 24, 2026", status: "pending", notes: "Brief needed from David first (see Urgent). Service May 24." },
 
   // CHURCH / MUSIC
-  { id: 40, task: "Worship Leaders Full Day Training (May 24)", portfolio: "music", owner: "David", due: "May 24, 2026", status: "active", notes: "After church service — Planning Center app training + 3-month song roster. Calendar updated to full day." },
   { id: 41, task: "Build The Gathering weekly to-do list", portfolio: "music", owner: "David", due: "May 20, 2026", status: "active", notes: "Started. Items in: leader check-in ✓, security check (Ps Roy) ✓, coffee check (Shenica) ✓. Continue building + formalise." },
   { id: 42, task: "Sound training — all sound team", portfolio: "music", owner: "David", due: "", status: "pending", notes: "Target May 2026 if possible." },
   { id: 43, task: "Music one-on-ones × 6 remaining", portfolio: "music", owner: "David", due: "", status: "active", notes: "Leniese · Mark · Queeneth · Jade · Bonolo · Willemien" },
@@ -347,17 +355,13 @@ const TASKS = [
   { id: 52, task: "Little Saints advantages list (Loise to send)", portfolio: "ops", owner: "Loise", due: "", status: "waiting", notes: "For Open Day / admissions use." },
   { id: 53, task: "Little Saints Meta ad admin access — ask Jade", portfolio: "ops", owner: "David", due: "", status: "pending", notes: "" },
   { id: 54, task: "SuperNova Dance — set up meetings with website companies for quotes", portfolio: "ops", owner: "David", due: "", status: "pending", notes: "Jade's SuperNova Dance event (next year). Contact website companies, set up meetings, get quotes. Then consolidate for decision." },
-  { id: 55, task: "Project Padi (May 27, 08:00–09:00) — confirm photographer", portfolio: "marketing", owner: "Aimee", due: "May 27, 2026", status: "waiting", notes: "Aimee to confirm who photographs." },
   { id: 56, task: "Marriage Course #2 — confirm date", portfolio: "ops", owner: "David", due: "", status: "pending", notes: "Confirmation needed: 2026 second run or 2027." },
   { id: 57, task: "Jack (FnF) — CWI Saturday morning worship", portfolio: "ops", owner: "David", due: "", status: "pending", notes: "Keo asked David to contact Jack about CWI Saturday morning worship. Still to contact." },
   { id: 58, task: "Pienaar — Eon speakers / sound desk service", portfolio: "ops", owner: "David", due: "", status: "pending", notes: "Still to contact Pienaar." },
-  { id: 59, task: "Morning Devotions — David presenting", portfolio: "ops", owner: "David", due: "Jun 1, 2026", status: "pending", notes: "✓ 13 May done. Next: 1 Jun · 23 Jun. Prepare 1 week in advance." },
+  { id: 59, task: "Morning Devotions — David presenting", portfolio: "ops", owner: "David", due: "Jun 23, 2026", status: "recurring", notes: "✓ 13 May done. ✓ 1 Jun today. Next: 23 Jun. Prepare 1 week in advance." },
   { id: 62, task: "Overtime forms — collect from marketing team", portfolio: "ops", owner: "David", due: "", status: "recurring", notes: "Recurring: 14th of every month. Get overtime forms from Renier, Aidan, Nelisile, Tebogo." },
   { id: 63, task: "Open Day sticker mockup (Aidan) — Loise meeting", portfolio: "marketing", owner: "Aidan", due: "", status: "pending", notes: "Sticker to go over existing posters for Open Day 1 Aug. Aidan to mock up what it looks like." },
-  { id: 64, task: "Open Day meeting — present marketing campaign plan", portfolio: "marketing", owner: "David", due: "May 20, 2026", status: "active", notes: "20 May 13:00. Present full marketing campaign plan: paid marketing plan, all channels, budget breakdown. Working budget: R2500." },
-  { id: 66, task: "Zambia soup poster — add 'registration closing 31 May'", portfolio: "marketing", owner: "Renier", due: "May 15, 2026", status: "active", notes: "Add registration closing date (31 May) to poster before publishing. Announcement order: F1&2 video → Min to Win poster → Zambia soup poster." },
   { id: 67, task: "Foundations 3 dates — negotiate with Ps Roy", portfolio: "ops", owner: "David", due: "", status: "pending", notes: "Ps Roy asked for Aug 26, 27, 29. David wants to move to 24 + 25 Aug instead. Chat with Ps Roy." },
-  { id: 69, task: "Open Day campaign prep — build plan before meeting", portfolio: "marketing", owner: "David", due: "May 19, 2026", status: "pending", notes: "Prep block needed before 20 May 13:00. Full marketing campaign plan: all channels, paid marketing, R2500 budget breakdown. Booked into schedule." },
 
   // ── CAMPAIGN PIPELINE — added 18 May 2026 (from Saints Calendar April Update) ──
 
@@ -365,12 +369,12 @@ const TASKS = [
   { id: 70, task: "Formal Ball (Jun 23) — Phase 1 brief", portfolio: "marketing", owner: "Aidan", due: "May 18, 2026", status: "active", notes: "Tier 3 — Saints. ⚠️ Already inside 6-week runway (started May 12). P1 brief now → P2 design May 18–Jun 1 → Launch Jun 1 → P5 final push Jun 9–23." },
   { id: 71, task: "Eistedfodd Choir QQ (Jun 29–Jul 31) — Phase 1 brief", portfolio: "marketing", owner: "Aidan", due: "May 18, 2026", status: "active", notes: "Tier 3 — Saints. 6-week runway started May 18. P1 brief now → P2 May 25–Jun 8 → Launch Jun 8 → P5 Jun 15–Jun 29." },
 
-  // TIER 1 — PHASE 0 REQUIRED ASAP (compressed runways)
-  { id: 72, task: "Little Saints Concert (Aug 23) — Phase 0 WIN meeting", portfolio: "marketing", owner: "David", due: "May 25, 2026", status: "pending", notes: "Tier 1 — Little Saints. ⚠️ Phase 0 required before campaign starts. WIN meeting with Loise/Tebogo ASAP. P1 May 25 → P2 Jun 20 → Launch Aug 1 → P5 Aug 9–23." },
-  { id: 73, task: "Saints Production (Sep 22–23) — Phase 0 WIN meeting", portfolio: "marketing", owner: "David", due: "Jun 1, 2026", status: "pending", notes: "Tier 1 — Saints. ⚠️ Phase 0 required before campaign starts. WIN meeting with Catharine/Loise. P1 Jun 1 → P2 Jul 15 → Launch Aug 15 → P5 Sep 8–22." },
+  // TIER 1 — P0 DONE (8 Jun 2026) — campaigns in progress
+  { id: 72, task: "Saints Production (Sep 22–23) — P2 Aidan designing, 22 Jun draft", portfolio: "marketing", owner: "Nelisile", due: "Jun 22, 2026", status: "active", notes: "WIN done 8 Jun. Aidan designing. 22 Jun draft due. Launch week 22 Jun. David owns lights/sound/video." },
+  { id: 73, task: "Little Saints Concert (Aug 23) — P2 Aidan designing", portfolio: "marketing", owner: "Tebogo", due: "", status: "active", notes: "WIN done 8 Jun. Aidan designing. Timeline to be set with Loise. Launch target Aug 1." },
+  { id: 119, task: "NWU — Tommy Peterson collab post", portfolio: "marketing", owner: "Nelisile", due: "", status: "waiting", notes: "Check Catharine's chat for info. Check with Masego if she has more photos. Saints collab with Tommy Peterson / NWU." },
 
   // TIER 2 — PHASE 0 REQUIRED (runway started)
-  { id: 74, task: "Rivers-Sisters Conference (Sep 17–19) — Phase 0 meeting", portfolio: "marketing", owner: "David", due: "May 25, 2026", status: "pending", notes: "Tier 2 — Church. Same tier as Men's Rivers Conference. 4-month runway started May 17. First-run Phase 0 meeting ASAP. P1 May 25–Jun 15 → P2 Jun 15–Jul 6 → Launch Jul 6 → P5 Sep 3–17. Lead: Renier." },
 
   // TIER 3 — UPCOMING (sorted by event date; due date = runway start)
   { id: 75, task: "Schoonspruit FAST 5s (Aug 22) — Phase 1 brief", portfolio: "marketing", owner: "Aidan", due: "Jul 11, 2026", status: "pending", notes: "Tier 3 — Saints. Runway starts Jul 11. P1 Jul 11–18 → P2 Jul 18–Aug 1 → Launch Aug 1 → P5 Aug 8–22." },
@@ -399,6 +403,28 @@ const TASKS = [
   // ADDED 18 MAY 2026 (morning)
   { id: 93, task: "Car guard money — add to May cash banks", portfolio: "ops", owner: "David", due: "Jun 5, 2026", status: "pending", notes: "Car guard + cleaner money given to Keo for Sunday 17 May. Must be recorded on May cash banks. Submit to Keo by 5 Jun." },
   { id: 94, task: "Podcast equipment — research current setup + next tier upgrade + budget", portfolio: "ops", owner: "David", due: "", status: "pending", notes: "1. Document what we currently have. 2. Research next tier of equipment upgrade. 3. Get a quote or set a budget for the upgrade." },
+
+  // ADDED 1 JUN 2026
+  { id: 103, task: "Create Open Day registration form", portfolio: "ops", owner: "David", due: "Jun 1, 2026", status: "active", notes: "Form for parents to register a slot for Open Day. Due today." },
+  { id: 104, task: "Music Ministry Workshop — follow up invitees, confirm numbers", portfolio: "music", owner: "David", due: "", status: "active", notes: "Invites sent. Now follow up with everyone individually to confirm attendance. Workshop: 20 Jun, 08:00–11:00 at CRC. Also invited: Dr Ananias, Reece, Amo, Daniels." },
+  { id: 105, task: "Get Che CC receipts → take to Keo + discuss new card details", portfolio: "ops", owner: "David", due: "Jun 1, 2026", status: "active", notes: "Claim back receipts for online marketing spend on Che's CC. Then agree on what card details to use going forward." },
+  { id: 106, task: "Find Kids Church date from Loise → communicate to Aidan", portfolio: "marketing", owner: "David", due: "Jun 1, 2026", status: "active", notes: "Ask Loise for the Kids Church date. Once confirmed, give to Aidan to start marketing ASAP." },
+  { id: 107, task: "Tell Nelisile: check Open Day enquiries daily", portfolio: "marketing", owner: "David", due: "Jun 1, 2026", status: "active", notes: "Nelisile to monitor all Open Day channels daily — make sure he knows where to look for parent enquiries." },
+  { id: 108, task: "Open Day — brief marketing team on sponsor invite", portfolio: "marketing", owner: "David", due: "Jun 1, 2026", status: "active", notes: "Marketing to design a sponsor invite: full breakdown of what sponsor gives + what they get in return. Brief the team today." },
+  { id: 109, task: "Job advertisement — wait for Loise info, brief marketing", portfolio: "marketing", owner: "David / Loise", due: "", status: "waiting", notes: "Little Saints job advertisement. Loise sends job details. Marketing makes poster. Send back to Loise for approval before posting." },
+  { id: 110, task: "Full day social shoot — follow up Nelisile on date + agenda", portfolio: "marketing", owner: "Nelisile", due: "", status: "waiting", notes: "Nelisile planning the date and agenda. Will get back to David." },
+  { id: 111, task: "Sports team photos — confirm time from Nelisile + Claudio", portfolio: "marketing", owner: "Renier", due: "This Wed", status: "waiting", notes: "Renier taking photos. Waiting on time confirmation from Nelisile and Claudio." },
+  { id: 112, task: "Che leaders workshop — Aidan to capture + setup keyboard + sound", portfolio: "marketing", owner: "Aidan", due: "", status: "pending", notes: "Aidan to capture + edit for posting. Also needs to set up a keyboard and sound for the workshop." },
+  { id: 113, task: "Team building theme design — Aidan by Jun 10", portfolio: "marketing", owner: "Aidan", due: "Jun 10, 2026", status: "pending", notes: "Design theme for staff team building event (Jul 25 — compulsory attendance). Aidan to hand in by Jun 10." },
+  { id: 114, task: "Check what shirts to wear at team building — ask marketing team", portfolio: "ops", owner: "David", due: "", status: "pending", notes: "Confirm with marketing team what everyone should wear at the team building event." },
+  { id: 115, task: "Packing stage clean up — this week", portfolio: "ops", owner: "David", due: "Jun 5, 2026", status: "active", notes: "Get the stage cleared and looking good. To be looked at this week." },
+
+  // ADDED 8 JUN 2026 (14:17)
+  { id: 121, task: "Website check — events on church + school sites with links", portfolio: "ops", owner: "David", due: "", status: "pending", notes: "Check church website: all relevant events listed with correct links. Check Saints + Little Saints school websites: Open Day posts up and accurate." },
+
+  // ADDED 18 MAY 2026 (14:09 batch)
+  { id: 97, task: "Zambia trip — chat to Che about Aidan going (marketing + worship)", portfolio: "ops", owner: "David", due: "", status: "pending", notes: "Raise with Che: Aidan to go on Zambia missions trip as the marketing AND worship person." },
+  { id: 120, task: "AI tools research — what can I use + what works best", portfolio: "ops", owner: "David", due: "", status: "active", notes: "Che approved the allowance. David tasked to research what AI tools are available, what suits the ministry context best, and what would work well alongside Claude." },
 ];
 
 // ── DONE ─────────────────────────────────────────────────────────────────────
@@ -436,6 +462,28 @@ const DONE = [
   { task: "SACSA prep checklist — completed + sent", portfolio: "Sports", completedDate: "May 15, 2026", notes: "Gear inventory + availability sent to team + coaches. Ready for 16 May." },
   { task: "Sunday prep — sound desk brief + Keo handover", portfolio: "Operations", completedDate: "May 15, 2026", notes: "Sound desk briefed. Car guard + cleaner money given to Keo. David absent Sunday 17 May — fully covered." },
   { task: "Loise — updated calendar PDF received + processed", portfolio: "Operations", completedDate: "May 18, 2026", notes: "April Update PDF reviewed. All new events processed into campaign pipeline and task list." },
+  { task: "Saints Q2 Merit money — given to Cathrine", portfolio: "Operations", completedDate: "May 18, 2026", notes: "Counted and handed to Cathrine at 10:00 Monday meeting." },
+  { task: "Zambia soup sale poster + slide — done", portfolio: "Marketing", completedDate: "May 18, 2026", notes: "Renier completed both. Dates updated: Jul 4–16. Registration closing 31 May included ✅." },
+  { task: "Zambia soup poster — 'Registration closing 31 May' added", portfolio: "Marketing", completedDate: "May 18, 2026", notes: "Done before publishing." },
+  { task: "Aidan — FEDA Drama schedule confirmed", portfolio: "Operations", completedDate: "May 18, 2026", notes: "Leave school 06:00 · Rehearsal 09:00–10:30 · Lunch ~13:00 · Performance 20:30. Whole day." },
+  { task: "Baby Dedication #1 + #2 — slides, certificates, service, photos", portfolio: "Service Production", completedDate: "May 24, 2026", notes: "Both babies dedicated 24 May. All info received, designed, approved, service done, photos taken and sent to parents. Fully complete." },
+  { task: "Zambia banking details — added to contribution picture, posters + slides", portfolio: "Marketing", completedDate: "May 2026", notes: "Renier added banking details to all Zambia materials." },
+  { task: "This Sunday (May 24) post — approved + scheduled with Zambia fund note", portfolio: "Marketing", completedDate: "May 23, 2026", notes: "Approved + scheduled. Includes Zambia funds note." },
+  { task: "May overtime forms — collected from marketing team", portfolio: "Operations", completedDate: "May 2026", notes: "Collected from Renier, Aidan, Nelisile, Tebogo." },
+  { task: "Shenica overtime document — sent", portfolio: "Operations", completedDate: "May 2026", notes: "" },
+  { task: "Jade setlist for May 31 — approved", portfolio: "Music", completedDate: "May 2026", notes: "David approved. Jade setting up + contacting band." },
+  { task: "Single Mom Brunch — poster approved + registration link live", portfolio: "Marketing", completedDate: "Jun 1, 2026", notes: "P3 complete. Poster designed by Aidan, approved by Neo, registration link live." },
+  { task: "Rivers-Sisters Conference — Phase 0 cleared", portfolio: "Marketing", completedDate: "Jun 1, 2026", notes: "Already marketed and almost fully booked. P4 active." },
+  { task: "ClickUp migration — all 3 entities", portfolio: "Operations", completedDate: "Jun 1, 2026", notes: "Church + Saints + Little Saints. All tiers, all phase subtasks with dates + descriptions. Fully complete." },
+  // ADDED 8 JUN 2026
+  { task: "Little Saints Concert (Aug 23) — Phase 0 WIN meeting", portfolio: "Marketing", completedDate: "Jun 8, 2026", notes: "WIN done. Aidan designing. Campaign in P2." },
+  { task: "Saints Production (Sep 22–23) — Phase 0 WIN meeting", portfolio: "Marketing", completedDate: "Jun 8, 2026", notes: "WIN done. Aidan designing — 22 Jun draft. Launch week 22 Jun. David owns lights/sound/video." },
+  { task: "Limpopo recap reel — done and posted", portfolio: "Marketing", completedDate: "Jun 8, 2026", notes: "Renier completed and posted." },
+  { task: "Worship Leaders Full Day Training (May 24)", portfolio: "Music", completedDate: "May 24, 2026", notes: "Done. Talked through song setup on Services app." },
+  { task: "Project Padi (May 27) — cancelled", portfolio: "Operations", completedDate: "May 27, 2026", notes: "Event was cancelled." },
+  { task: "Open Day meeting prep + meeting (20 May)", portfolio: "Marketing", completedDate: "May 20, 2026", notes: "Campaign prep done. Meeting held 20 May." },
+  { task: "Music Ministry Workshop — invites sent", portfolio: "Music", completedDate: "Jun 8, 2026", notes: "Invites out. Now following up to confirm numbers." },
+  { task: "Ask Che for AI allowance", portfolio: "Operations", completedDate: "Jun 8, 2026", notes: "Approved. David tasked to research best AI tools." },
 ];
 
 // ─────────────────────────────────────────────────────────────────────────────
